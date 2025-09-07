@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lan Nguyen - Digital Marketing & Project Manager</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c5aa0;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #2c5aa0;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.05)" points="0,1000 1000,800 1000,1000"/></svg>');
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .hero-text .years {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #2c5aa0;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            border: 5px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 5%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c5aa0;
+        }
+
+        /* About Section */
+        .about {
+            background: #f8f9fa;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 400px;
+            background: #ddd;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .expertise-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .expertise-card i {
+            font-size: 2.5rem;
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #2c5aa0;
+        }
+
+        .project-stats {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .project-stat {
+            background: #f8f9fa;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .project-link {
+            color: #2c5aa0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: #1e3a6f;
+        }
+
+        /* Skills Section */
+        .skills {
+            background: #f8f9fa;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .skill-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Experience Section */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #2c5aa0;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .timeline-item:nth-child(odd) {
+            margin-left: 0;
+            margin-right: 50%;
+            margin-right: calc(50% + 1rem);
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-right: 0;
+            margin-left: 50%;
+            margin-left: calc(50% + 1rem);
+        }
+
+        .timeline-content {
+            padding: 2rem;
+        }
+
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .contact-content {
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            color: white;
+            font-size: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: scale(1.2);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .timeline::before {
+                left: 0;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">LAN NGUYEN</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>LAN NGUYEN</h1>
+                <div class="subtitle">Digital Marketing Communication Project Manager</div>
+                <div class="years">Over 5 Years Experience</div>
+                <p class="hero-description">
+                    Detail-oriented Communications and Marketing Professional with a strong track record of building company culture and compelling brand identities. Skilled in digital projects management, developing sustainable growth strategies, delivering SEO-optimized content, and driving engagement across digital platforms.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">80%</span>
+                        <span class="stat-label">SEO Traffic Increase</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Videos Produced</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3K+</span>
+                        <span class="stat-label">Social Followers</span>
+                    </div>
+                </div>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    [Professional Photo Placeholder]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    [About Image/Infographic Placeholder]
+                </div>
+                <div class="about-text">
+                    <p>Fluent in English and French, I enable efficient collaboration with international colleagues, clients and business partners. My experience spans across leading companies including Ajinomoto Foods Europe, Imperial Tobacco Limited France, Deloitte, and more.</p>
+                    
+                    <div class="expertise-grid">
+                        <div class="expertise-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3>Digital Projects Management</h3>
+                            <p>With a strategic mindset and hands-on experience, I drive impactful results across websites, social media campaigns, and digital initiatives by aligning creative vision with business objectives.</p>
+                        </div>
+                        <div class="expertise-card">
+                            <i class="fas fa-comments"></i>
+                            <h3>Communication Strategy</h3>
+                            <p>My expertise includes conducting in-depth communication audits and developing charters that define tone, messaging, and channels used for both traditional and digital media.</p>
+                        </div>
+                        <div class="expertise-card">
+                            <i class="fas fa-video"></i>
+                            <h3>Video Content Production</h3>
+                            <p>I specialize in the full-cycle production of corporate videos and oversee video projects in collaboration with external agencies, ensuring all content aligns with brand identity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Website Redesign Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        [Website Redesign Screenshots Placeholder]
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Website Redesign - Ajinomoto Foods Europe</h3>
+                        <p>Led the complete website overhaul from Drupal to WordPress, implementing a user-first approach with strong SEO optimization and modern UX/UI design.</p>
+                        <div class="project-stats">
+                            <span class="project-stat">+80% SEO Traffic</span>
+                            <span class="project-stat">82/100 SEO Score</span>
+                            <span class="project-stat">50+ Pages</span>
+                        </div>
+                        <p><strong>Key Achievements:</strong></p>
+                        <ul>
+                            <li>Managed call for tender process and agency selection</li>
+                            <li>Collaborated on Figma for UX/UI design concepts</li>
+                            <li>Created comprehensive testing plan using Asana</li>
+                            <li>Implemented ongoing content maintenance strategy</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extranet Client Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        [Extranet Interface Screenshots Placeholder]
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Client Extranet Platform - Ajinomoto Foods Europe</h3>
+                        <p>Developed a comprehensive client extranet platform for document generation and management, replacing manual processes with automated solutions.</p>
+                        <div class="project-stats">
+                            <span class="project-stat">200+ Clients</span>
+                            <span class="project-stat">3000+ Files</span>
+                            <span class="project-stat">50+ Wireframes</span>
+                        </div>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>Automated document generation system</li>
+                            <li>Data synchronization bridge (passerelle)</li>
+                            <li>Cross-functional team coordination</li>
+                            <li>User training and support resources</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Extranet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Management -->
+                <div class="project-card">
+                    <div class="project-image">
+                        [Social Media Analytics Dashboard Placeholder]
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Media Management - Ajinomoto Foods Europe</h3>
+                        <p>Built comprehensive social media strategy and community management across LinkedIn, YouTube, and Instagram, strengthening brand presence in Europe.</p>
+                        <div class="project-stats">
+                            <span class="project-stat">3K+ LinkedIn</span>
+                            <span class="project-stat">33K+ Instagram</span>
+                            <span class="project-stat">70% Traffic Growth</span>
+                        </div>
+                        <p><strong>Strategy Elements:</strong></p>
+                        <ul>
+                            <li>Editorial charter with messaging guidelines</li>
+                            <li>Content collection and production workflow</li>
+                            <li>Monthly performance reporting</li>
+                            <li>Internal communication platform management</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="#" class="project-link"><i class="fab fa-youtube"></i> YouTube</a>
+                            <a href="#" class="project-link"><i class="fab fa-instagram"></i> Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Production -->
+                <div class="project-card">
+                    <div class="project-image">
+                        [Video Production BTS/Portfolio Placeholder]
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Video Production Portfolio</h3>
+                        <p>End-to-end video production for corporate communications, including interviews, testimonials, and event coverage across multiple companies.</p>
+                        <div class="project-stats">
+                            <span class="project-stat">50+ Videos</span>
+                            <span class="project-stat">40K+ Views</span>
+                            <span class="project-stat">Award Winner</span>
+                        </div>
+                        <p><strong>Production Process:</strong></p>
+                        <ul>
+                            <li>Scripting and narrative development</li>
+                            <li>Location scouting and equipment setup</li>
+                            <li>Post-production with Adobe Premier Pro</li>
+                            <li>Feedback management and final delivery</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-play"></i> Watch Reel</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        [Newsletter Design Samples Placeholder]
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Newsletter - Imperial Tobacco</h3>
+                        <p>Successfully transitioned quarterly print newsletter to digital format during COVID-19, enhancing accessibility and engagement across 11 countries.</p>
+                        <div class="project-stats">
+                            <span class="project-stat">11 Countries</span>
+                            <span class="project-stat">3500+ Readers</span>
+                            <span class="project-stat">50% Engagement</span>
+                        </div>
+                        <p><strong>Digital Transformation:</strong></p>
+                        <ul>
+                            <li>Editorial charter development</li>
+                            <li>Figma design collaboration</li>
+                            <li>Analytics integration with QR codes</li>
+                            <li>Multi-country distribution strategy</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Read Sample</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photography Portfolio -->
+                <div class="project-card">
+                    <div class="project-image">
+                        [Photography Portfolio Grid Placeholder]
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Corporate Photography</h3>
+                        <p>Professional photography services for organizational charts, executive sessions, events, and website visuals, strengthening company identity and employee belonging.</p>
+                        <div class="project-stats">
+                            <span class="project-stat">Multiple Companies</span>
+                            <span class="project-stat">Events Coverage</span>
+                            <span class="project-stat">Executive Sessions</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-images"></i> View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Digital Marketing</h3>
+                    <ul class="skill-list">
+                        <li>SEO Strategy & Implementation</li>
+                        <li>Social Media Management</li>
+                        <li>Content Marketing</li>
+                        <li>Email Marketing</li>
+                        <li>Analytics & Reporting</li>
+                        <li>Brand Management</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-project-diagram"></i> Project Management</h3>
+                    <ul class="skill-list">
+                        <li>Agile Methodology</li>
+                        <li>Stakeholder Management</li>
+                        <li>Call for Tender Process</li>
+                        <li>Cross-functional Team Leadership</li>
+                        <li>Budget Management</li>
+                        <li>Risk Assessment</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Technical Tools</h3>
+                    <ul class="skill-list">
+                        <li>Adobe Creative Suite</li>
+                        <li>Figma</li>
+                        <li>WordPress & Drupal</li>
+                        <li>Asana</li>
+                        <li>Microsoft 365</li>
+                        <li>Filmora & Adobe Premiere Pro</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-video"></i> Content Creation</h3>
+                    <ul class="skill-list">
+                        <li>Video Production & Editing</li>
+                        <li>Photography</li>
+                        <li>Copywriting</li>
+                        <li>Graphic Design</li>
+                        <li>Script Writing</li>
+                        <li>Brand Guidelines Development</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-globe"></i> Languages</h3>
+                    <ul class="skill-list">
+                        <li>English (Fluent)</li>
+                        <li>French (Fluent)</li>
+                        <li>Vietnamese (Native)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Analytics & Platforms</h3>
+                    <ul class="skill-list">
+                        <li>Google Analytics</li>
+                        <li>LinkedIn Analytics</li>
+                        <li>YouTube Analytics</li>
+                        <li>Workplace & Yammer</li>
+                        <li>QR Code Tracking</li>
+                        <li>Performance Reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-logo">[Ajinomoto Logo]</div>
+                        <h3>Digital Marketing Project Manager</h3>
+                        <h4>Ajinomoto Foods Europe Solutions & Ingredients Division</h4>
+                        <p>Led comprehensive digital transformation initiatives including website redesign, client extranet development, and social media strategy implementation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-logo">[Imperial Logo]</div>
+                        <h3>Communications Manager</h3>
+                        <h4>Imperial Tobacco Limited France</h4>
+                        <p>Managed quarterly newsletter production and digital transformation, serving the Africa and Indian Ocean cluster with enhanced communication strategies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-logo">[Deloitte Logo]</div>
+                        <h3>Marketing Communications Specialist</h3>
+                        <h4>Deloitte</h4>
+                        <p>Supported marketing initiatives and communication strategies for enterprise clients, developing brand positioning and content marketing approaches.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-logo">[Various Logos]</div>
+                        <h3>Marketing & Communications Roles</h3>
+                        <h4>Selas Pharmacy, Dorgay Paris, GTO Media, LMED</h4>
+                        <p>Diverse experience across healthcare, luxury, media, and technology sectors, building expertise in multi-industry communication strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title" style="color: white;">Let's Work Together</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
+                    Ready to drive your digital marketing initiatives forward? Let's discuss how my expertise can help achieve your business objectives.
+                </p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            lan.nguyen@email.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong><br>
+                            +33 X XX XX XX XX
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong><br>
+                            Paris, France
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <a href="#" class="cta-button">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" style="padding: 5rem 5%; background: white;">
+        <div class="container">
+            <h2 class="section-title">What Colleagues Say</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin-top: 3rem;">
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 5px solid #2c5aa0;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div style="width: 60px; height: 60px; background: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80') center/cover; border-radius: 50%; margin-right: 1rem;">
+                        </div>
+                        <div>
+                            <strong>Florence Lequin</strong><br>
+                            <span style="color: #666; font-size: 0.9rem;">Executive Assistant</span>
+                        </div>
+                    </div>
+                    <p style="font-style: italic; line-height: 1.6;">
+                        "Lan is a very organized person who can lead projects easily: gathering data, input with team members, convincing and making the steps and follow the realization. Reporting KPI transparently is also very appreciated. The management of subcontractors is also good, whether digital support designers or media artists."
+                    </p>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 5px solid #2c5aa0;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div style="width: 60px; height: 60px; background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80') center/cover; border-radius: 50%; margin-right: 1rem;">
+                        </div>
+                        <div>
+                            <strong>Yves Dusquenoy</strong><br>
+                            <span style="color: #666; font-size: 0.9rem;">General Manager, Imperial Tobacco Limited France</span>
+                        </div>
+                    </div>
+                    <p style="font-style: italic; line-height: 1.6;">
+                        "Lan is a valuable ally in our communication strategy at Imperial Tobacco Limited France. Together, we were able to implement initiatives, such as newsletter, intranet, website. She supported me on all the events that punctuate the year, including some abroad. Her extensive knowledge about digital communication contributes to build the agile structuration of animation."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lan Nguyen. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.7;">Built with passion for digital marketing excellence</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling and animations -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background opacity on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all project cards and timeline items
+        document.querySelectorAll('.project-card, .timeline-item, .expertise-card, .skill-category').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Counter animation for hero stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = counter.textContent;
+                const numericValue = parseInt(target.replace(/[^\d]/g, ''));
+                const suffix = target.replace(/[\d]/g, '');
+                let current = 0;
+                const increment = numericValue / 50;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= numericValue) {
+                        counter.textContent = numericValue + suffix;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + suffix;
+                    }
+                }, 40);
+            });
+        }
+
+        // Trigger counter animation when hero section is in view
+        const heroObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    heroObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        heroObserver.observe(document.querySelector('.hero-stats'));
+
+        // Mobile menu toggle (basic implementation)
+        const createMobileMenu = () => {
+            const nav = document.querySelector('nav');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (window.innerWidth <= 768) {
+                const menuToggle = document.createElement('button');
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                menuToggle.style.cssText = `
+                    background: none;
+                    border: none;
+                    font-size: 1.5rem;
+                    color: #2c5aa0;
+                    cursor: pointer;
+                    display: block;
+                `;
+                
+                menuToggle.addEventListener('click', () => {
+                    if (navLinks.style.display === 'flex') {
+                        navLinks.style.display = 'none';
+                    } else {
+                        navLinks.style.display = 'flex';
+                        navLinks.style.flexDirection = 'column';
+                        navLinks.style.position = 'absolute';
+                        navLinks.style.top = '100%';
+                        navLinks.style.left = '0';
+                        navLinks.style.right = '0';
+                        navLinks.style.background = 'white';
+                        navLinks.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                        navLinks.style.padding = '1rem';
+                    }
+                });
+                
+                if (!nav.querySelector('button')) {
+                    nav.appendChild(menuToggle);
+                }
+            }
+        };
+
+        // Initialize mobile menu on load and resize
+        window.addEventListener('load', createMobileMenu);
+        window.addEventListener('resize', createMobileMenu);
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            const rate = scrolled * -0.5;
+            
+            if (hero) {
+                hero.style.transform = `translateY(${rate}px)`;
+            }
+        });
+
+        // Form submission handler (if you add a contact form later)
+        const handleContactForm = (event) => {
+            event.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message! I will get back to you soon.');
+        };
+
+        // Add typing animation to hero title
+        const typeWriter = (element, text, speed = 100) => {
+            let i = 0;
+            element.textContent = '';
+            
+            const type = () => {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            };
+            
+            type();
+        };
+
+        // Initialize typing animation on load
+        window.addEventListener('load', () => {
+            const heroTitle = document.querySelector('.hero-text h1');
+            if (heroTitle) {
+                const originalText = heroTitle.textContent;
+                setTimeout(() => {
+                    typeWriter(heroTitle, originalText, 150);
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=1.7 cm, % seperation between body and page edge from the left
+    right=1.7 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Lan Nguyen's CV},
+    pdfauthor={Lan Nguyen},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 3.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont Lan Nguyen 
+
+        
+        \fontsize{20 pt}{20 pt}\selectfont Marketing and Communication Manager
+
+        \vspace{5 pt}
+
+        \normalsize
+        \mbox{{\footnotesize\faMapMarker*}\hspace*{0.14cm}New York City, Manhattan, NY}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{lannguyen101092@gmail.com}{{\footnotesize\faEnvelope[regular]}\hspace*{0.14cm}lannguyen101092@gmail.com}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{tel:+90-541-999-99-99}{{\footnotesize\faPhone*}\hspace*{0.14cm}646 240 3090}}%
+        \kern 5.0 pt%
+
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/ngoc-lan-nguyen/}{{\footnotesize\faLinkedinIn}\hspace*{0.14cm}ngoc-lan-nguyen}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://bit.ly/452Hui8}{{\footnotesize\faLink}\hspace*{0.14cm}portfolio: bit.ly/452Hui8}}%
+    \end{header}
+
+    \vspace{5 pt + 0.3 cm}
+
+        
+        \begin{onecolentry}
+            Detail-oriented Communications and Marketing Professional with a strong track record of building company culture
+and compelling brand identities. Skilled in digital project management, developing sustainable growth strategies,
+delivering SEO-optimized content, and driving engagement across digital platforms, resulting in measurable business
+outcomes. Trilingual in English, French, and Vietnamese, enabling efficient collaboration with international colleagues, clients, and
+business partners.
+        \end{onecolentry}
+
+
+
+
+    
+    \section{Skills}
+        \textbf{Project Management:} InVision, Asana
+
+        \textbf{Design Software:} Figma, Photoshop, InDesign, Illustrator
+
+        \textbf{Communication Platforms:} LinkedIn, Workplace, Yammer, YouTube, Instagram, Facebook, X, Pinterest
+
+        \textbf{Video Maker Software:} Premiere Pro, Filmora Wondershare, Capcut
+
+        \textbf{Marketing Tools:} Google Analytics, SEMrush, LinkedIn Analytics
+    
+    \section{Experience}
+
+        \begin{twocolentry}{
+            Mar 2022 – Mar 2024
+        }
+            \textbf{Digital Media Strategist to the EMEA General Manager, Ajinomoto Foods Europe}, Paris\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Served as right-hand partner to the EMEA GM, acting as an extension of their time, energy and judgment
+                \item Managed and elevated the GM’s and company social media platform by creating compelling content
+                \item Initiated a web marketing redesign for TG-Tencho products, extranet platforms, fermentation services landing page, increasing SEO traffic by 80\% and securing 50 new business contacts. Built partnerships with cross-functional teams, externals subcontractors to manage websites redesigns, photography, and video production,
+aligned with project timelines and ensuring budget compliance
+\item Launched LinkedIn and YouTube from scratch, established strategy, cadence, and governance, and lifted
+performance to top-five among competitors in six months
+\item Devised and launched a comprehensive three-year communication strategy across digital and traditional
+channels, achieving organizational goals to enhance brand visibility by 6%
+\item Championed HR and communication activities across global affiliates to foster consistent brand messaging and
+organizational culture, increasing employee motivation by 10\% over one year through targeted HR and
+communication initiatives
+
+\item \textbf{Key partners : Barentz, Coca-cola, Unilever}
+      
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+
+        \begin{twocolentry}{
+            Sept 2019 – Mar 2022
+        }
+            \textbf{Communication Officer, Imperial Tobacco Limited}, Paris\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+\item Conducted a communication audit and developed a long-term strategic communication plan
+\item Produced and distributed newsletters for 11 countries (The Africa and Indian Ocean Cluster)
+\item Organized large-scale events, including annual conferences and team-building sessions for up to 3000 participants
+\item Led and coordinated a team of communication champions across 11 countries
+\item Conducted and analyzed employee survey to provide actionable insights for organizational improvement
+\item Organized and executed online competitions
+\item Produced and edited over 20 videos annually to support internal campaigns and announcements
+\item Designed posters, packaging models, and other print materials for Davidoff, Gauloises, Fine, Blu…
+\item Created content for the LinkedIn Life Page, strengthening the company’s branding and visibility
+\item Delivered marketing assets such as annual agendas and greeting cards to clients and business partners
+      
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+        \vspace{0.2 cm}
+
+
+        \begin{twocolentry}{
+            Sept 2017 – Sept 2019
+        }
+            \textbf{Marketing Project Manager, Dorgay Paris 1935}, Paris, Hanoi, Lyon\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+\item Created content, developed brand storytelling for the Facebook page and corporate website
+\item Collaborated with Arthus Bertrand and Cesare Pompanon to support the distribution and launch of their new collections in the Vietnamese market.
+\item Worked with agency for new products photoshoots, designed Hanoi showroom
+\item Participated to design the popup new collection for Arthus Bertrand for Chinese New Year
+\item Organized new products launch events
+      
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+
+        \begin{twocolentry}{
+            2016 – Sept 2017
+        }
+            \textbf{Asia marketing manager and sales advisor, SELAS PHARMACY}, Paris\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+\item Analyzed and advised customer needs for pharmaceutical products, especially skincare and beauty products, such as Laneige, Innisfree, Sulwhasoo, Laneige, Etude, La Roche Posay, Avene, Caudalie, Skinceuticals
+\item Organized new products launch event
+\item Monthly report to the pharmacy director about the sales
+      
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+    \section{Award}
+
+
+
+        
+        \begin{twocolentry}{
+            2019
+        }
+            \textbf{First Prize - Leadership Award, Imperial Tobacco}, France\end{twocolentry}
+
+        \vspace{0.10 cm}
+  
+For initiatives in the company’s innovative communication campaign (video of employee motivation and loyalty)
+
+
+    \section{Education}
+
+
+
+        
+        \begin{twocolentry}{
+            2021
+        }
+            \textbf{MA in Marketing Communications Strategy Expert}, Openclassrooms, France\end{twocolentry}
+
+        \vspace{0.10 cm}
+        
+        \begin{twocolentry}{
+            2017
+        }
+            \textbf{MA in Information Communication Organization}, Rennes 2 University, France\end{twocolentry}
+
+        \vspace{0.10 cm}
+        
+        \begin{twocolentry}{
+            2014
+        }
+            \textbf{B.A in International Relations, Media \& Communication}, Diplomatic Academy of Vietnam\end{twocolentry}
+
+        \vspace{0.10 cm}
+
+    
+
+
+    \section{Certificates}
+
+
+
+        
+        \begin{twocolentry}{
+            2019
+        }
+            \textbf{Advanced Google Analytics}, Google\end{twocolentry}
+
+        \vspace{0.10 cm}
+        
+        \begin{twocolentry}{
+            2019
+        }
+            \textbf{Digital Marketing \& E-commerce}, Google\end{twocolentry}
+
+        \vspace{0.10 cm}
+        
+        \begin{twocolentry}{
+            2014
+        }
+            \textbf{Microsoft 365}, Diplomatic Academy of Vietnam\end{twocolentry}
+
+        \vspace{0.10 cm}
+    
+    \section{Languages}
+
+        \begin{onecolentry}
+            \textbf{English:} Fluent
+        \end{onecolentry}
+
+        \begin{onecolentry}
+            \textbf{French:} Fluent
+        \end{onecolentry}
+        
+        \begin{onecolentry}
+            \textbf{Vietnamese:} Native
+        \end{onecolentry}
+
+    
+    \section{Hobby}
+
+Filmmaking ; Piano ; K-pop and Korean culture ; International cuisine ; Beauty \& Care ; Travel
+
+
+
+    
+
+\end{document}
