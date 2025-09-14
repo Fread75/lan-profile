@@ -1,0 +1,340 @@
+
+DIGITAL MARKETING COMMUNICATION
+PROJECT MANAGER
+OVER 5 YEARS EXPERIENCES LAN NGUYEN PORTFOLIO
+Detail-oriented Communications and Marketing Professional with a strong track record of building company culture and compelling
+brand identities. Skilled in digital projects management, developing sustainable growth strategies, delivering SEO-optimized
+content, and driving engagement across digital platforms, resulting in measurable business outcomes. Fluent in English and French,
+enabling efficient collaboration with international colleagues, clients and business partners.
+Companies : Ajinomoto Foods Europe Solutions & Ingredients Div, Imperial Tobacco Limited France, Deloitte, Selas Pharmacy,
+Dorgay Paris, GTO media, LMED
+DIGITAL PROJECTS MANAGEMENT
+¥¤ WEBSITE REDESIGN
+
+AJINOMOTO FOODS EUROPE SID
+º¤ SOCIAL MEDIA MANAGEMENT
+
+AJINOMOTO FOODS EUROPE SID
+Î¤ NEWSLETTER
+IMPERIAL TOBACCO LIMITED FRANCE
+Ö¤ EVENTS
+
+for several companies
+ì¤ EXTRANET CLIENT
+
+AJINOMOTO FOODS EUROPE SID
+¤ VIDEO PRODUCING
+
+for several companies !¤ PHOTOGRAPHY
+
+for several companies
+COMMUNICATION STRATEGY VIDEO CONTENT PRODUCERS
+With a strategic mindset and hands-
+on experience, I drive impactful
+results across websites, social media
+campaigns, and digital initiatives by
+aligning creative vision with
+business objectives.
+My expertise includes conducting
+in-depth communication audits
+and developing charters that
+define tone, messaging, and
+channel used for both traditional
+and digital media.
+I specialize in the full-cycle
+production of corporate videos and
+oversee video projects in
+collaboration with external
+agencies, ensuring all content
+aligns with brand identity.
+Our company’s website had not received any updates or maintenance for over two years. I led the call for tender process to find a qualified agency
+capable of managing a full transition—from the outdated CMS Drupal to CMS WordPress. This included a complete redesign of our web marketing
+approach, with a strong focus on user experience, measurable performance, and robust SEO optimization to improve visibility and engagement.
+Selecting the right agency was our key to meeting
+our needs, solving challenges, and delivering a
+visually high-performance website.
+Collaborated closely with the art director on
+Figma to conceptualize and refine ideas.
+Managed articles and video content, ensuring all
+visuals aligned with Ajinomoto Group’s brand
+guidelines.
+Tested all site elements, pages, and functionalities
+using Asana to ensure smooth performance across
+all devices.
+I ensured the new website was designed with a
+user-first approach-responsive, fast, well-
+structured, and accessible to all users.
+Built and executed an SEO strategy based on
+keyword analysis, including content creation.
+CONTEXT
+HOW WE INCREASED SEO TRAFFIC BY 80%
+HOW I MANAGED THIS PROJECT
+MAIN FIGURES
+éØ WEBSITE REDESIGN - Ajinomoto Foods Europe Solutions & Ingredients
+01. CALL FOR TENDER
++ 50Pages Website 20Pages SEO
+5Videos 82/100
+SEO Score 80%
+Traffic
+80%
+Traffic 50
+business contact
+04. UX/UI DESIGN 05. CONTENT CREATION 06. TESTING
+02. USER-FRIENDLY WEBSITE 03. SEO AT FIRST
+Before the Project
+To kick off the project, I conducted a full audit of the existing website, assessing its last update, security status, and overall structure. I
+collected and consolidated requirements from key stakeholders, including Marketing, Quality, HR, and General Management, to draft a
+comprehensive specifications document. I identified and evaluated five potential web agencies, led pricing negotiations, and organized a
+final presentation meeting to select the most suitable partner.
+‍
+During the Project
+Once the project was launched, I created a detailed roadmap outlining key phases: content production, UI/UX design, testing, and CMS
+integration (WordPress). I collaborated closely with the project manager and the artistic director of the sub contractor to ensure optimal
+design and user experience wire frames.
+I was also responsible for writing content, producing videos, and preparing all materials in terms of images, web hosting, legal pages for
+the website launch. Regular stakeholder meetings ensured alignment and on-time delivery. The testing phase was a top priority, I oversaw
+comprehensive testing of all links and functionalities across devices to guarantee flawless performance.
+After the Project
+Post-launch, I implemented a content maintenance and optimization plan, outlining tasks to be done monthly and semi-annually. This
+ensured the website stayed fresh, relevant, and SEO-friendly to secure and improve its ranking on Google.
+Visit the website SEO Pages Videos
+Our company initiated the development of a new client extranet platform aimed at serving external partners, the Quality department, and the Sales
+department. This extranet is designed to store and generate key documents such as certificates, statements, and legal documentation requested by
+clients. This solution replaces the outdated and time-consuming process where the Quality department manually created documents and distributed
+them via email. In addition to streamlining document generation, the project addresses a major challenge: document fragmentation. Currently, files
+are stored and managed across multiple locations—including our internal storage platform and various Excel files—making it difficult to access and
+share consistent information. To resolve this, we developed a data transfer bridge (passerelle) to integrate and synchronize documents from the
+internal systems into the new extranet.
+
+Due to its scope and complexity, the project involves multiple stakeholders across departments, requiring clear communication and regular updates
+for all cross-functional teams at each phase of development. This has been a critical factor in ensuring alignment and progress throughout the lifecycle
+of the project.
+Selecting the right agency was our key to meeting
+our needs, solving challenges, and delivering a
+visually high-performance website.
+Collaborated closely with the art director on
+Figma to conceptualize and refine ideas.
+Maintain strong communication between
+internal teams and external agencies to meet
+objectives and deadlines.
+Tested all site elements, pages, and functionalities
+using Asana to ensure smooth performance across
+all devices.
+I ensured the new website was designed with a
+user-first approach-responsive, fast, well-
+structured, and accessible to all users.
+Developing a detailed specification that outlines
+all the functionalities of the extranet, including
+descriptions of the tools and their operations.
+CONTEXT
+HOW WE SOLDED THE PROBLEMATIC
+HOW I MANAGED THIS PROJECT
+MAIN FIGURES
+·¿ EXTRANET CLIENT - Ajinomoto Foods Europe Solutions & Ingredients
+01. CALL FOR TENDER
++ 50Wireframes +200
+Clients +3000
+upload files
+30
+business contact
+04. UX/UI DESIGN 05. CROSS-FONCTION TEAMS 06. TESTING
+02. USER-FRIENDLY WEBSITE 03. SPECIFICATIONS
+Before the Project
+To kick off the extranet client project, I led a detailed assessment of the current document management processes, identifying
+inefficiencies and fragmentation across departments. I gathered and consolidated requirements from key stakeholders—Quality, Sales, IT,
+and external partners—to develop a comprehensive functional and technical specification. This document defined all platform features,
+user roles, workflows, and integration needs. I also coordinated project scope, timelines, and communication plans to ensure alignment
+from day one.
+
+
+During the Project
+I created a detailed roadmap covering development phases, including architecture design, data bridge (passerelle) creation, platform
+development, and rigorous testing. I facilitated collaboration between cross-functional teams through regular updates, sprint reviews, and
+stakeholder meetings. I oversaw the integration of automated document generation, access control, and security measures, while ensuring
+seamless synchronization of documents from internal systems.
+
+
+After the Project
+Post-launch, I implemented a structured training program for internal users and provided support resources for external partners. I
+established a feedback and monitoring system to track performance, address issues, and plan iterative improvements. To maintain the
+extranet, I defined ongoing maintenance and update schedules, ensuring the extranet remains efficient, secure, and aligned with evolving
+business needs.
+Visit the Extranet
+I have always been passionate about video production and have had the opportunity to apply this passion across every company I’ve worked with. My
+experience spans the entire production process, from scripting and agenda planning to filming, post-production, music selection, and subtitling.
+
+I have created a variety of video content, including interviews, event, career testimonials, and corporate video. In addition, I’ve also collaborated
+closely with photographer and producer agency, gaining hands-on experience both behind and in front of the camera.
+Watch now Watch now Watch now
+Watch now Watch now Watch now
+I interview individuals to understand their
+careers and key messages, then script narratives
+that effectively communicate their stories.
+I manage the feedback loop between
+participants, and occasionally with external
+agencies, to ensure the final version meets
+expectations and quality standards.
+I produce the final version and oversee its
+publication.
+Filmora Wondershare Video, Adobe Premier Pro,
+Capcut
+I handle all filming preparations, including
+location scouting, staging, and setting up
+equipment such as camera, tripods and
+microphones.
+I manage the entire post-production process,
+including video editing, sound design, music
+selection, color correction, and adding subtitles.
+CONTEXT
+HOW I PRODUCED QUALITY VIDEOS
+DISCOVER MY VIDEOS
+MAIN FIGURES
+¿´ VIDEO PRODUCING for several companies
+01. SCRIPTS
++ 50Videos
++40k
+Views
+04. FEEDBACK 05. FINAL VERSION 06. SOFTWARES, TOOLS
+02. MATERIALS 03. POST PRODUCTION
+Leadership Awards Video
+First Place Winner
+Whether it's creating a team organizational chart at headquarters to present within a cluster, conducting professional photo sessions for executive
+committee members, events, or producing visuals to enhance a website, I consistently deliver high-quality photography. As a communications
+manager, I ensure every image reflects the company’s identity and strengthens employees’ sense of belonging.
+Visit the landing page website -
+
+all photos were captured by me
+CONTEXT
+DISCOVER MY GALERIES
+Ue PHOTOGRAPHY for seveal companies
+At AFE, where communication is a newly established function, my role focuses on strengthening the brand image in Europe, supporting sales growth,
+fostering a sense of belonging within the group, and enhancing relationships with clients and partners.
+
+I lead the creation and management of content for social media channels including YouTube and LinkedIn, and I’ve built a dedicated Division
+community on Workplace to streamline internal communication. I also coordinate visual content production for marketing campaigns on Instagram.
+In addition to external communications, I am responsible for managing the company’s Yammer and Workplace pages, which are essential internal
+communication platforms. These channels play a crucial role in fostering a strong sense of connection and engagement among employees across
+different regions. They are used to share important company news, communicate with affiliates, and report key results and achievements to the
+Ajinomoto group.
+
+Beyond information sharing, these platforms also serve as dynamic tools for enhancing internal culture. I utilize them to launch internal surveys,
+gather employee feedback, and organize initiatives such as recognition awards and contests. These activities not only contribute to a more cohesive and
+motivated workforce but also align with the company’s values of transparency, collaboration, and employee involvement.
+I developed a comprehensive social media
+strategy with an editorial charter including
+messaging guidelines, tone tailored to target
+audiences, content length recommendations, key
+topics, and strategic calendar of important dates.
+Based on the strategy, I executed a structured
+content collection plan, involving and contacting
+relevant contributors, conducting interviews,
+and producing high-quality written and video
+content based on the gathered insights.
+I ensure all content is published on time and in
+accordance with the editorial schedule, and I
+deliver monthly performance reports to the
+General Manager.
+CONTEXT
+HOW I MANAGED THE SOCIAL MEDIA CHANELS
+DISCOVER MORE
+MAIN FIGURES
+ÍÁ Social Media Management - Ajinomoto Foods Europe Solutions & Ingredients
+01. SOCIAL MEDIA STRATEGY
+3kFollowers LinkedIn
+33kFollowers Instagram
+70%
+Natural content Traffic
+10
+new clients montly
+02. CONTENT CREATION 03. PUBLISEMENT & REPORT
+Visit the LinkedIn Page Visit the Youtube Page Visit Instagram Page
+I led the development of the quarterly print newsletter, a longstanding communication tool within the Africa and Indian Ocean cluster. In response to
+the COVID-19 pandemic and structural changes within the group, I successfully guided the transition to a digital format—transforming a traditional
+medium into a more agile and impactful communication channel.
+
+This digital shift enhanced accessibility, enabled faster distribution, and significantly improved audience engagement. By integrating analytics tools
+and QR codes, we were able to track detailed performance metrics, including view rates, interaction levels, and geographic reach, allowing for data-
+driven improvements and targeted content strategies.
+I draft an editorial charter outlines the principles, tone,
+and guidelines that shape the content for all topic. It
+aligns with the brand identity, and supports the
+communication with the employees effectively.
+The newsletter is printed in the required quantities for
+each country and distributed accordingly across our
+cluster to ensure local reach and visibility.
+Due to COVID-19 and recent changes within the group, it
+became essential to shift to digital newsletters. This
+transition helped address several challenges, including
+accessibility, timely distribution, and improved
+engagement across regions.
+By leveraging analytics tools and QR codes, we are able to
+track key insights from the newsletter, including view rates,
+engagement levels (such as likes), and geographic
+distribution by country.
+Using Figma, I design all newsletter pages and
+collaborate closely with the graphic designer to ensure
+visual consistency and high-quality layout execution.
+CONTEXT
+HOW WE LAUNCHED THE NEWSLETTER
+DISCOVER
+MAIN FIGURES
+Read more Read more
+¿Â Newsletter Print & Digital - Imperial Tobacco Limited France
+ÝÂ EDITORIAL CHARTER
+12Pages 15Articles 10Topics 11
+Countries 3500Audiences +50%
+Employees motivation
+04. PUBLISEMENT 05. NEWSLETTER DIGITAL 06. REPORT
+02. CONTENT CREATION 03. PAGE DESIQN
+I executed a structured content collection plan, involving
+and contacting relevant contributors, conducting
+interviews, and producing high-quality written and video
+content based on the gathered insights.
+I have extensive experience in event organization, working closely with the HR department and Executive Assistants to plan and execute a wide range
+of corporate events. My responsibilities include managing calls for tender, developing event agendas, designing and sending invitations, and
+overseeing on-site activities such as photography and video production. I have successfully organized events including team buildings, company
+anniversaries, product launches, quarterly business reviews, and town halls—some of which have gathered up to 3,000 participants. Each event is
+carefully designed to align with the company’s objectives, reinforce employee engagement, and deliver a high-quality experience.
+CONTEXT
+Software and tools
+REFERENCES
+VT EVENT for seval companies
+‘’Lan is a very organized person who
+can lead projects easily : gathering
+input data, sharing with and
+convincing the members, making
+the steps and follow the realization.
+Reporting KPI transparently is also
+very appreciated. The management
+of subcontractors is also good,
+whether digital support designers
+or media artists. She also has
+extensive knowledge about digital
+communication, like the good
+practices, the process to build
+websites, the metrics, and the
+structuration of animation. She can
+produce attractive visual them with
+no external help when necessary.”
+Yves Dusquenoy- General Manager
+
+Ajinomoto Foods Europe
+“Lan is a valuable ally in our
+communication team at Imperial
+Tobacco Limited France. Together, we
+were able to implement new
+initiatives, such as newsletter,
+intranet, website. She supported me
+on all the events that punctuate the
+year, including some abroad. Lan is
+focused on innovation and never
+short of ideas. Her refreshing,
+creative vision and technical expertise
+(Social Media, Adobe Suite, Microsoft
+365, Figma, Filmora) contribute to
+maintaining an agile and human
+communication strategy within our
+Africa and Indian Ocean Cluster.”
+Florence Lequin - Executive Assistant
+
+Imperial Tobacco Limited France
